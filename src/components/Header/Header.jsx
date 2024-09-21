@@ -4,9 +4,9 @@ import { Phone } from 'lucide-react'
 
 const Header = () => {
     return (
-        <div className='bg-secondary flex flex-col md:flex-row justify-between md:max-w-screen-lg max-w-[90%] mx-auto rounded-3xl m-5 ss:px-10 px-5 pt-5 ' >
+        <div className='bg-secondary flex flex-col md:flex-row justify-between lg:max-w-screen-lg max-w-[90%] md:max-w-[80%] mx-auto rounded-3xl m-5 ss:px-10 px-5 pt-5 ' >
             <div className="my-auto mx-auto max-w-[450px] ">
-                <Typography className='text-primary font-bold md:text-[50px] ss:text-[35px] text-[25px] ' >
+                <Typography className='text-primary font-bold lg:text-[50px] md:text-[35px] sm:text-[30px] text-[25px] ' >
                     Доставка грузов из Китая в Россию
                 </Typography>
 
@@ -141,7 +141,7 @@ const Header = () => {
 
             </div>
             <div className=" mx-auto">
-                <img src={person} alt="Header Image" className='sm:max-w-[350px] md:max-w-[560px] max-w-[250px] ' />
+                <img src={person} alt="Header Image" className='sm:max-w-[350px] lg:max-w-[560px] md:max-w-[450px] max-w-[250px] ' />
             </div>
         </div>
     )

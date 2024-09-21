@@ -18,7 +18,7 @@ const Advantages = () => {
     ]
 
     return (
-        <div className='md:max-w-screen-lg max-w-[90%] mx-auto py-5 ' >
+        <div className='lg:max-w-screen-lg max-w-[90%] md:max-w-[80%] mx-auto py-5 ' >
 
             <Typography className='text-primary font-bold md:text-[50px] ss:text-[35px] text-[30px] ' >
                 Наши преимущества
@@ -33,7 +33,7 @@ const Advantages = () => {
                 {advantages.map(item => (
 
                     <div className="bg-[#F4FAFF] w-max ss:max-w-[200px] max-w-[130px] p-5 rounded-3xl mt-5 hover:-translate-y-5 transition-all duration-300 " key={item.title} >
-                        <div className="bg-[#72B3EA] text-white inline-block p-2 rounded-full ">
+                        <div className="bg-darkBlue text-white inline-block p-2 rounded-full ">
                             {item.icon}
                         </div>
                         <Typography className='text-primary font-semibold text-xs ss:text-base '>{item.title}</Typography>
