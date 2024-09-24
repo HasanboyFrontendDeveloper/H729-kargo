@@ -5,6 +5,7 @@ import React from 'react'
 const DeliveryCard = ({ item, handleOpen }) => {
     return (
         <div className='w-[290px] mx-auto bg-lightBlue rounded-3xl py-10 px-7 my-5 flex flex-col gap-2 hover:-translate-y-5 transition-all duration-300 '>
+        {/* <div className='w-[290px] mx-auto bg-lightBlue rounded-3xl py-10 px-7 my-5 flex flex-col gap-2 hover:-translate-y-5 transition-all duration-300 '> */}
             <div className="p-2 max-w-min rounded-full bg-darkBlue text-white">
 
                 {item.icon}

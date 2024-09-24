@@ -20,7 +20,11 @@ module.exports = withMT({
         lg: "1200px",
         xl: "1500px",
       },
+      
     },
+    fontFamily: {
+      'raleway': ['Raleway', 'sans-serif']
+    }
   },
   plugins: [],
 });

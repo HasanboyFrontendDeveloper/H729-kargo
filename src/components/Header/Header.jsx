@@ -4,19 +4,20 @@ import { Phone } from 'lucide-react'
 
 const Header = () => {
     return (
-        <div className='bg-secondary flex flex-col md:flex-row justify-between lg:max-w-screen-lg max-w-[90%] md:max-w-[80%] mx-auto rounded-3xl m-5 ss:px-10 px-5 pt-5 ' >
-            <div className="my-auto mx-auto max-w-[450px] ">
-                <Typography className='text-primary font-bold lg:text-[50px] md:text-[35px] sm:text-[30px] text-[25px] ' >
+        <div className='bg-secondary flex flex-col md:flex-row justify-between lg:max-w-[1276px] max-w-[90%] md:max-w-[80%] mx-auto rounded-3xl mb-5 mt-2 ss:px-10 pl-5 pr-[26px] ' >
+            <div className="ml-8 max-w-[468px] max-h-[424px] pt-[53px]  ">
+                <Typography variant='h1' className='font-raleway text-primary font-bold max-w-[466px] lg:text-[51px] leading-[59.87px] md:text-[35px] sm:text-[30px] text-[25px] '  >
                     Доставка грузов из Китая в Россию
                 </Typography>
 
-                <Typography className='text-textPrimary font-semibold ss:text-base text-sm ' >
+                <Typography className='text-textPrimary font-raleway mt-[15px] mb-[10px] font-normal leading-[122.4px] ss:text-base text-sm ' >
                     Мы предоставляем бесплатно:
                 </Typography>
-                <ul className='grid grid-cols-2 ' >
-                    <li className='flex gap-2 items-center '>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.77085 11.8958L6.72919 9.85413C6.60419 9.72913 6.45141 9.66663 6.27085 9.66663C6.0903 
+                <ul className='flex gap-x-10 ' >
+                    <div className="">
+                        <li className='flex gap-2 items-center '>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.77085 11.8958L6.72919 9.85413C6.60419 9.72913 6.45141 9.66663 6.27085 9.66663C6.0903 
                                 9.66663 5.93752 9.72913 5.81252 9.85413C5.67363 9.99301 5.60419 10.1562 5.60419 10.3437C5.60419 
                                 10.5312 5.66669 10.6875 5.79169 10.8125L8.33335 13.3541C8.44446 13.4652 8.5903 13.5208 8.77085 
                                 13.5208C8.95141 13.5208 9.09724 13.4652 9.20835 13.3541L14.2084 8.35413C14.3334 8.22913 14.3959 
@@ -30,18 +31,19 @@ const Header = () => {
                                 4.08329C16.6667 4.83329 17.257 5.71524 17.6875 6.72913C18.1181 7.74301 18.3334 8.83329 18.3334 
                                 9.99996C18.3334 11.1805 18.1181 12.2777 17.6875 13.2916C17.257 14.3055 16.6667 15.1875 15.9167 
                                 15.9375C15.1667 16.6875 14.2847 17.2743 13.2709 17.6979C12.257 18.1215 11.1667 18.3333 10 18.3333Z"
-                                fill="#203253"
-                            />
-                        </svg>
+                                    fill="#203253"
+                                />
+                            </svg>
 
 
-                        <Typography className='text-textPrimary font-medium ss:text-base text-sm ' >
-                            Переводчик
-                        </Typography>
-                    </li>
-                    <li className='flex gap-2 items-center '>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.77085 11.8958L6.72919 9.85413C6.60419 9.72913 6.45141 9.66663 6.27085 9.66663C6.0903 
+                            <Typography className='text-textPrimary font-raleway font-medium ss:text-base text-sm ' >
+                                Переводчик
+                            </Typography>
+                        </li>
+
+                        <li className='flex gap-2 items-center '>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.77085 11.8958L6.72919 9.85413C6.60419 9.72913 6.45141 9.66663 6.27085 9.66663C6.0903 
                                 9.66663 5.93752 9.72913 5.81252 9.85413C5.67363 9.99301 5.60419 10.1562 5.60419 10.3437C5.60419 
                                 10.5312 5.66669 10.6875 5.79169 10.8125L8.33335 13.3541C8.44446 13.4652 8.5903 13.5208 8.77085 
                                 13.5208C8.95141 13.5208 9.09724 13.4652 9.20835 13.3541L14.2084 8.35413C14.3334 8.22913 14.3959 
@@ -55,18 +57,23 @@ const Header = () => {
                                 4.08329C16.6667 4.83329 17.257 5.71524 17.6875 6.72913C18.1181 7.74301 18.3334 8.83329 18.3334 
                                 9.99996C18.3334 11.1805 18.1181 12.2777 17.6875 13.2916C17.257 14.3055 16.6667 15.1875 15.9167 
                                 15.9375C15.1667 16.6875 14.2847 17.2743 13.2709 17.6979C12.257 18.1215 11.1667 18.3333 10 18.3333Z"
-                                fill="#203253"
-                            />
-                        </svg>
+                                    fill="#203253"
+                                />
+                            </svg>
 
 
-                        <Typography className='text-textPrimary font-medium ss:text-base text-sm ' >
-                            Хранение грузов
-                        </Typography>
-                    </li>
-                    <li className='flex gap-2 items-center '>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.77085 11.8958L6.72919 9.85413C6.60419 9.72913 6.45141 9.66663 6.27085 9.66663C6.0903 
+                            <Typography className='text-textPrimary font-raleway font-medium ss:text-base text-sm ' >
+                                Поиск товара
+                            </Typography>
+                        </li>
+
+                    </div>
+
+                    <div className="">
+
+                        <li className='flex gap-2 items-center '>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.77085 11.8958L6.72919 9.85413C6.60419 9.72913 6.45141 9.66663 6.27085 9.66663C6.0903 
                                 9.66663 5.93752 9.72913 5.81252 9.85413C5.67363 9.99301 5.60419 10.1562 5.60419 10.3437C5.60419 
                                 10.5312 5.66669 10.6875 5.79169 10.8125L8.33335 13.3541C8.44446 13.4652 8.5903 13.5208 8.77085 
                                 13.5208C8.95141 13.5208 9.09724 13.4652 9.20835 13.3541L14.2084 8.35413C14.3334 8.22913 14.3959 
@@ -80,18 +87,18 @@ const Header = () => {
                                 4.08329C16.6667 4.83329 17.257 5.71524 17.6875 6.72913C18.1181 7.74301 18.3334 8.83329 18.3334 
                                 9.99996C18.3334 11.1805 18.1181 12.2777 17.6875 13.2916C17.257 14.3055 16.6667 15.1875 15.9167 
                                 15.9375C15.1667 16.6875 14.2847 17.2743 13.2709 17.6979C12.257 18.1215 11.1667 18.3333 10 18.3333Z"
-                                fill="#203253"
-                            />
-                        </svg>
+                                    fill="#203253"
+                                />
+                            </svg>
 
 
-                        <Typography className='text-textPrimary font-medium ss:text-base text-sm ' >
-                            Поиск товара
-                        </Typography>
-                    </li>
-                    <li className='flex gap-2 items-center '>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.77085 11.8958L6.72919 9.85413C6.60419 9.72913 6.45141 9.66663 6.27085 9.66663C6.0903 
+                            <Typography className='text-textPrimary font-raleway font-medium ss:text-base text-sm ' >
+                                Хранение грузов
+                            </Typography>
+                        </li>
+                        <li className='flex gap-2 items-center '>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.77085 11.8958L6.72919 9.85413C6.60419 9.72913 6.45141 9.66663 6.27085 9.66663C6.0903 
                                 9.66663 5.93752 9.72913 5.81252 9.85413C5.67363 9.99301 5.60419 10.1562 5.60419 10.3437C5.60419 
                                 10.5312 5.66669 10.6875 5.79169 10.8125L8.33335 13.3541C8.44446 13.4652 8.5903 13.5208 8.77085 
                                 13.5208C8.95141 13.5208 9.09724 13.4652 9.20835 13.3541L14.2084 8.35413C14.3334 8.22913 14.3959 
@@ -105,30 +112,32 @@ const Header = () => {
                                 4.08329C16.6667 4.83329 17.257 5.71524 17.6875 6.72913C18.1181 7.74301 18.3334 8.83329 18.3334 
                                 9.99996C18.3334 11.1805 18.1181 12.2777 17.6875 13.2916C17.257 14.3055 16.6667 15.1875 15.9167 
                                 15.9375C15.1667 16.6875 14.2847 17.2743 13.2709 17.6979C12.257 18.1215 11.1667 18.3333 10 18.3333Z"
-                                fill="#203253"
-                            />
-                        </svg>
+                                    fill="#203253"
+                                />
+                            </svg>
 
 
-                        <Typography className='text-textPrimary font-medium ss:text-base text-sm ' >
-                            Досмотр грузов
-                        </Typography>
-                    </li>
+                            <Typography className='text-textPrimary font-raleway font-medium ss:text-base text-sm ' >
+                                Досмотр грузов
+                            </Typography>
+                        </li>
+                    </div>
                 </ul>
 
                 <form className='flex flex-col gap-5 my-5 '>
                     <Input
-                        className='placeholder:text-gray-500 placeholder:opacity-100 focus:text-primary active:text-primary border-2 active:border-transparent focus:border-transparent bg-white rounded-2xl '
+                        className='placeholder:text-[#929DAF] h-[50px] p-0 placeholder:opacity-100 focus:text-primary active:text-primary border-2 active:border-transparent focus:border-transparent bg-white rounded-2xl '
                         placeholder='Введите ваш номер телефона'
                         containerProps={{ outline: 'none' }}
                         icon={<Phone />}
                         labelProps={{
                             className: "hidden",
                         }}
+                        
                     />
 
                     <Input
-                        className='placeholder:text-gray-500 placeholder:opacity-100  focus:text-primary active:text-primary border-2 active:border-transparent focus:border-transparent border-transparent bg-white rounded-2xl '
+                        className='placeholder:text-[#929DAF] h-[50px] px-[19px] placeholder:opacity-100  focus:text-primary active:text-primary border-2 active:border-transparent focus:border-transparent border-transparent bg-white rounded-2xl '
                         placeholder='Какой товар вы ищите или хотите доставить в Россию?'
                         containerProps={{ outline: 'none' }}
                         labelProps={{
@@ -136,11 +145,11 @@ const Header = () => {
                         }}
                     />
 
-                    <Button className='bg-primary font-bold hover:bg-darkBlue duration-300 ' >Получить 100$ скидку на доставку</Button>
+                    <Button style={{lineHeight: '18.78px'}} className='bg-primary font-semibold font-raleway px-0 normal-case hover:bg-darkBlue duration-300 text-base py-[17.5px] ' >Получить 100$ скидку на доставку</Button>
                 </form>
 
             </div>
-            <div className=" mx-auto">
+            <div className="">
                 <img src={person} alt="Header Image" className='sm:max-w-[350px] lg:max-w-[560px] md:max-w-[450px] max-w-[250px] ' />
             </div>
         </div>

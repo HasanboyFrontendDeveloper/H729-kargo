@@ -8,6 +8,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import logo from '../../assets/images/logo.png'
 import NavList from "./NavList";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -24,12 +25,11 @@ const Nav = () => {
   }, []);
 
   return (
-    <Navbar className="mx-auto max-w-screen-lg px-6 py-3 shadow-none ">
+    <Navbar className="mx-auto max-w-[1276px] py-6 shadow-none px-0 ">
       <div className="flex items-center justify-between text-blue-gray-900">
-
-        <div className="">
-          <img src={logo} alt="Logo" />
-        </div>
+        <Link to={'/'}>
+          <img src={logo} alt="Logo" className="w-[175px] " />
+        </Link>
 
         <div className="hidden lg:block">
           <NavList />
