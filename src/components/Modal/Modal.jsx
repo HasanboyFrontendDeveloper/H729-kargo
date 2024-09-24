@@ -5,17 +5,19 @@ import {
     Input,
     Typography,
 } from "@material-tailwind/react";
-import { Mail, Phone, User } from 'lucide-react'
+import { Mail, Phone, User, X } from 'lucide-react'
 
 const Modal = ({ handleOpen, open }) => {
 
     return (
         <>
-            <Dialog size="sm" open={open} handler={handleOpen} className="bg-lightBlue max-w-[550px] p-7 flex flex-col gap-4 rounded-2xl " >
+            <Dialog size="sm" open={open} handler={handleOpen} className="bg-lightBlue relative max-w-[550px] p-7 flex flex-col gap-4 rounded-2xl " >
 
                 <Typography className='text-primary sm:max-w-[480px] max-w-[350px] font-bold md:text-[40px] sm:text-[35px] text-[24px] ' >
-                    Заполните форму
+                    Заполните форму 
                 </Typography>
+
+                <X size={36} className="absolute top-5 right-5 cursor-pointer hover:text-darkBlue duration-300 " onClick={() => handleOpen()} />
 
                 <form className="flex flex-col gap-4">
                     <Input

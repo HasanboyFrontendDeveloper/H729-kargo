@@ -4,7 +4,7 @@ import React from 'react'
 
 const Contacts = () => {
     return (
-        <div className='lg:max-w-screen-lg md:max-w-[90%] max-w-[90%] mx-auto py-5 flex flex-col md:flex-row gap-5 '>
+        <div className='lg:max-w-screen-lg md:max-w-[90%] max-w-[90%] mx-auto pt-5 pb-10 flex flex-col md:flex-row gap-5 '>
             <form className="bg-lightBlue max-w-[550px] p-7 flex flex-col gap-4 rounded-2xl mx-auto ">
                 <Input
                     className='placeholder:opacity-100 placeholder:text-textPrimary focus:text-primary active:text-primary border-2 border-transparent active:border-transparent focus:border-transparent focus:border-b-darkBlue active:border-b-darkBlue bg-[#e4f3ff] rounded-2xl '
