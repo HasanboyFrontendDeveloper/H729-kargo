@@ -2,7 +2,7 @@ import { Button, Typography } from '@material-tailwind/react'
 import kargo from '../../assets/images/kargo.png'
 import { CalendarClock, JapaneseYen, MapPin } from 'lucide-react'
 
-const OurCases = () => {
+const OurCases = ({handleOpen}) => {
     return (
         <div className='lg:max-w-screen-lg md:max-w-[90%] max-w-[90%] mx-auto '>
 
@@ -57,7 +57,7 @@ const OurCases = () => {
                             <h1 className='font-bold md:text-2xl text-lg '><MapPin className='inline' /> Москва</h1>
                         </div>
                     </div>
-                    <Button className='bg-primary py-5 px-10 hover:bg-darkBlue duration-300 ' >Заказать</Button>
+                    <Button onClick={() => handleOpen()} className='bg-primary py-5 px-10 hover:bg-darkBlue duration-300 ' >Заказать</Button>
                 </div>
                 <div className="md:w-[50%] w-full ">
                     <img src={kargo} alt="kargo" className='w-full h-full ' />

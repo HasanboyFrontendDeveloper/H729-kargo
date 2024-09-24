@@ -118,7 +118,7 @@ const Header = () => {
 
                 <form className='flex flex-col gap-5 my-5 '>
                     <Input
-                        className='placeholder:text-gray-500 placeholder:opacity-100 focus:border-secondary active:border-secondary border-none bg-white rounded-2xl '
+                        className='placeholder:text-gray-500 placeholder:opacity-100 focus:text-primary active:text-primary border-2 active:border-transparent focus:border-transparent bg-white rounded-2xl '
                         placeholder='Введите ваш номер телефона'
                         containerProps={{ outline: 'none' }}
                         icon={<Phone />}
@@ -128,7 +128,7 @@ const Header = () => {
                     />
 
                     <Input
-                        className='placeholder:text-gray-500 placeholder:opacity-100 focus:border-secondary active:border-secondary border-none bg-white rounded-2xl '
+                        className='placeholder:text-gray-500 placeholder:opacity-100  focus:text-primary active:text-primary border-2 active:border-transparent focus:border-transparent border-transparent bg-white rounded-2xl '
                         placeholder='Какой товар вы ищите или хотите доставить в Россию?'
                         containerProps={{ outline: 'none' }}
                         labelProps={{
@@ -136,7 +136,7 @@ const Header = () => {
                         }}
                     />
 
-                    <Button className='bg-primary font-bold ' >Получить 100$ скидку на доставку</Button>
+                    <Button className='bg-primary font-bold hover:bg-darkBlue duration-300 ' >Получить 100$ скидку на доставку</Button>
                 </form>
 
             </div>

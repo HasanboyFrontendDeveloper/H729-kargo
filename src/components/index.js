@@ -6,3 +6,7 @@ export { default as Advantages } from "./Advantages/Advantages";
 export { default as OurCases } from "./OurCases/OurCases";
 export { default as Delivery } from "./Delivery/Delivery";
 export { default as DeliveryCard } from "./Delivery/DeliveryCard";
+export { default as Reviews } from "./Reviews/Reviews";
+export { default as ReviewCard } from "./Reviews/ReviewCard";
+export { default as Contacts } from "./Contacts/Contacts";
+export { default as Modal } from "./Modal/Modal";

@@ -34,7 +34,7 @@ const DeliveryCards = [
     },
 ]
 
-const Delivery = () => {
+const Delivery = ({handleOpen}) => {
 
     const settings = {
         dots: true,
@@ -89,9 +89,9 @@ const Delivery = () => {
             <div className="py-10 ">
 
 
-                <Slider {...settings}>
+                <Slider {...settings}  >
                     {DeliveryCards.map((item) => (
-                        <DeliveryCard item={item} key={item.title} />
+                        <DeliveryCard item={item} key={item.title} handleOpen={handleOpen} />
 
                     ))}
                 </Slider>

@@ -1,13 +1,23 @@
-import React from 'react'
-import { Advantages, Delivery, Header, OurCases } from '../components'
+import React, { useState } from 'react'
+import { Advantages, Contacts, Delivery, Header, Modal, OurCases, Reviews } from '../components'
 
 const Home = () => {
+
+  
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(!open);
+
   return (
     <div className=''>
       <Header />
       <Advantages />
-      <OurCases />
-      <Delivery />
+      <OurCases handleOpen={handleOpen} />
+      <Delivery handleOpen={handleOpen} />
+      <Reviews />
+      <Contacts />
+
+      <Modal handleOpen={handleOpen} open={open} />
     </div>
   )
 }
