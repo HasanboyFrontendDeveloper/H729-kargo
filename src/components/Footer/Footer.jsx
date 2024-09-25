@@ -8,19 +8,19 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <footer className="w-full bg-primary ">
-            <div className="md:max-w-screen-lg max-w-[90%] mx-auto flex flex-col ss:flex-row items-center justify-center gap-y-6 gap-x-12 p-6 text-center md:justify-between">
-                <div className="flex flex-col gap-5 ">
+            <div className="md:max-w-[1292px] max-w-[90%] mx-auto py-12 flex flex-col ss:flex-row items-center justify-center gap-y-6 gap-x-12 text-center md:justify-between">
+                <div className="flex flex-col gap-10 ">
                     <img src={mainLogo} alt="mainLogo" />
-                    <img src={secondLogo} alt="secondLogo" />
+                    <img src={secondLogo} alt="secondLogo" className="w-[187px] mx-[15px] " />
                 </div>
 
-                <ul className="flex flex-col md:flex-row items-center gap-y-2 gap-x-8 ">
+                <ul className="flex flex-col md:flex-row items-center gap-x-[85px] ">
                     <li>
                         <Typography
                             as="a"
                             href="#"
                             color="white"
-                            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+                            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500 !leading-[23.48px] text-[20px] "
                         >
                             <Link to={'/'}>
                                 Главная
@@ -32,7 +32,7 @@ const Footer = () => {
                             as="a"
                             href="/contacts"
                             color="white"
-                            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+                            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500 !leading-[23.48px] text-[20px]"
                         >
                             <Link to={'/manager'}>
                                 Ваш менеджер
@@ -44,7 +44,7 @@ const Footer = () => {
                             as="a"
                             href="#"
                             color="white"
-                            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+                            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500 !leading-[23.48px] text-[20px]"
                         >
                             <Link to={'/faq'}>
                                 Вопросы и ответы
@@ -56,7 +56,7 @@ const Footer = () => {
                             as="a"
                             href="#"
                             color="white"
-                            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+                            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500 !leading-[23.48px] text-[20px]"
                         >
                             <Link to={'/contacts'}>
                                 Контакты
@@ -66,7 +66,7 @@ const Footer = () => {
                 </ul>
 
                 <div className="">
-                    <div className=" flex justify-evenly pb-3 ">
+                    <div className=" flex justify-evenly pb-5 ">
 
                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                             <rect width="36" height="36" fill="url(#pattern0_2041_277)" />

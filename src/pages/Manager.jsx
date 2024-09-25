@@ -1,20 +1,20 @@
 import { Typography } from '@material-tailwind/react'
-import person from '../assets/images/headerImg.png'
+import meneger from '../assets/images/meneger.png'
 import double from '../assets/images/double.png'
 
 import React from 'react'
 
 const Manager = () => {
   return (
-    <div className='lg:max-w-screen-lg md:max-w-[90%] max-w-[90%] mx-auto py-5 flex flex-col items-center md:items-baseline '>
+    <div className='lg:max-w-[1276px] md:max-w-[90%] max-w-[90%] mx-auto py-5 flex flex-col items-center md:items-baseline '>
       <div className="flex md:flex-row flex-col-reverse gap-5 py-5">
-        <div className="bg-lightBlue rounded-2xl px-7 py-5 ">
-          <Typography className='text-[50px] font-bold text-primary  ' >Ваш менеджер</Typography>
-          <Typography className='font-normal text-textPrimary '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Typography> <br />
-          <Typography className='font-normal text-textPrimary '>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </Typography>
+        <div className="bg-lightBlue rounded-2xl px-7 py-5 max-w-[844px] ">
+          <Typography className='text-[51px] font-bold font-raleway !leading-[59.87px] text-primary  ' >Ваш менеджер</Typography>
+          <Typography className='font-normal font-raleway !leading-[25.2px] text-lg text-textPrimary '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Typography> <br />
+          <Typography className='font-normal font-raleway !leading-[25.2px] text-lg text-textPrimary '>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </Typography>
         </div>
-        <div className="bg-secondary rounded-2xl max-w-min lg:mix-h-max max-h-min mx-auto ">
-          <img src={person} alt="Header Image" className='xs:max-w-[350px] lg:max-w-[400px] md:max-w-[400px] max-w-[300px] ' />
+        <div className=" rounded-2xl max-w-[412px] max-h-[497px] mx-auto ">
+          <img src={meneger} alt="Header Image" className='xs:max-w-[350px] lg:max-w-[400px] md:max-w-[400px] max-w-[300px] ' />
 
         </div>
       </div>
