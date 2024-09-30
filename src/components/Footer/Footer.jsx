@@ -8,13 +8,13 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <footer className="w-full bg-primary ">
-            <div className="md:max-w-[1292px] max-w-[90%] mx-auto py-12 flex flex-col ss:flex-row items-center justify-center gap-y-6 gap-x-12 text-center md:justify-between">
+            <div className="md:max-w-[1292px] max-w-[90%] mx-auto py-12 flex flex-col ss:flex-row items-center justify-center gap-y-10 gap-x-12 text-center md:justify-between">
                 <div className="flex flex-col gap-10 ">
                     <img src={mainLogo} alt="mainLogo" />
                     <img src={secondLogo} alt="secondLogo" className="w-[187px] mx-[15px] " />
                 </div>
 
-                <ul className="flex flex-col md:flex-row items-center gap-x-[85px] ">
+                <ul className="flex flex-col md:flex-row items-center gap-x-[85px] gap-y-[10px] ">
                     <li>
                         <Typography
                             as="a"

@@ -4,45 +4,85 @@ import React from 'react'
 
 const Advantages = () => {
 
+    const ShipIcon = ({ className }) => {
+        return (
+            <svg width="82" height="80" className={className} viewBox="0 0 82 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+                <rect x="0.75" width="80.7359" height="80" fill="url(#pattern0_2070_64)" />
+                <defs>
+                    <pattern id="pattern0_2070_64" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlinkHref="#image0_2070_64" transform="matrix(0.00195312 0 0 0.00197109 0 -0.00459919)" />
+                    </pattern>
+                    <image id="image0_2070_64" width="512" height="512" xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFHGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIzLTAyLTI3VDIyOjMwOjMyKzA0OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMy0wMi0yN1QyMjozMTowMSswNDowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMy0wMi0yN1QyMjozMTowMSswNDowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDplYTdmNzVhMC0zNGJl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" />
+                </defs>
+            </svg>
+        )
+
+
+    }
+
     const advantages = [
-        { icon: <PackageSearch size={28} />, title: `Помощь \n в поиске товара` },
-        { icon: <BriefcaseBusiness size={28} />, title: 'Работаем с ООО \n и ИП (ТОРГ-12)' },
-        { icon: <FileText size={28} />, title: 'Документы \n для возврата НДС (20%)' },
-        { icon: <CreditCard size={28} />, title: 'Возможна оплата на карту или наличными в МСК' },
-        { icon: <Timer size={28} />, title: 'Оплата по счету \n за товар в Китае \n за 10 минут' },
-        { icon: <Headset size={28} />, title: 'Поддержка \n 24/7 онлайн' },
-        { icon: <Building size={28} />, title: '3 офиса в Китае: Пекин, Гуанчжоу, Иу' },
-        { icon: <BadgeCheck size={28} />, title: 'Гарантия \n лучшей цены' },
-        { icon: <User size={28} />, title: 'Таможенный представитель (декларант)' },
-        { icon: <BaggageClaim size={28} />, title: 'Экспедирование груза' },
+        { icon: <PackageSearch className='lg:size-7 size-[42px]  ' />, title: `Помощь \n в поиске товара` },
+        { icon: <BriefcaseBusiness className='lg:size-7 size-[42px]  ' />, title: 'Работаем с ООО \n и ИП (ТОРГ-12)' },
+        { icon: <FileText className='lg:size-7 size-[42px]  ' />, title: 'Документы \n для возврата НДС (20%)' },
+        { icon: <CreditCard className='lg:size-7 size-[42px]  ' />, title: 'Возможна оплата на карту или наличными в МСК' },
+        { icon: <Timer className='lg:size-7 size-[42px]  ' />, title: 'Оплата по счету \n за товар в Китае \n за 10 минут' },
+        { icon: <Headset className='lg:size-7 size-[42px]  ' />, title: 'Поддержка \n 24/7 онлайн' },
+        { icon: <Building className='lg:size-7 size-[42px]  ' />, title: '3 офиса в Китае: Пекин, Гуанчжоу, Иу' },
+        { icon: <BadgeCheck className='lg:size-7 size-[42px]  ' />, title: 'Гарантия \n лучшей цены' },
+        { icon: <User className='lg:size-7 size-[42px]  ' />, title: 'Таможенный представитель (декларант)' },
+        { icon: <BaggageClaim className='lg:size-7 size-[42px]  ' />, title: 'Экспедирование \n груза' },
     ]
 
     return (
-        <div className='lg:max-w-[1280px] max-w-[90%] md:max-w-[80%] mx-auto py-[51px] ' >
+        <div className='lg:max-w-[1280px] max-w-[281px] md:max-w-[80%] mx-auto mt-[71px] mb-[60px] ' >
 
-            <Typography className='text-primary font-raleway !leading-[46.96px] font-bold md:text-[40px] text-[30px] ' >
+            <Typography className='text-primary font-raleway lg:!leading-[46.96px] !leading-[28px] font-bold md:text-[40px] text-[24px] mb-[10px] ' >
                 Наши преимущества
             </Typography>
 
-            <Typography className='text-textPrimary text-lg font-raleway font-normal !leading-[25.2px] max-w-[500px]  ' >
+            <Typography className='text-textPrimary lg:text-lg text-sm font-raleway font-normal lg:!leading-[25.2px] !leading-[20px] max-w-[500px]  ' >
                 Мы предоставляем полный перечень услуг для качественного ведения товарного бизнеса в России
             </Typography>
 
             {/* <div className="py-5 grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2  gap-5 "> */}
-            <div className="py-5 flex justify-center flex-wrap  gap-5 ">
-                {advantages.map(item => (
+            <div className="lg:mt-10 mt-[25px] flex justify-center flex-wrap  gap-5 ">
+                {advantages.map((item, index) => (
 
-                    <div className="bg-[#F4FAFF] w-[240px] h-[182px] pt-[30px] pl-[35px] pr-[25px] rounded-3xl  " key={item.title} >
-                    {/* <div className="bg-[#F4FAFF] w-[240px] h-[182px] pt-[30px] pl-[35px] pr-[25px] rounded-3xl mt-5 hover:-translate-y-5 transition-all duration-300 " key={item.title} > */}
-                        <div className="bg-darkBlue text-white inline-block p-2 rounded-full ">
+                    <div className={`bg-[#F4FAFF] lg:w-[240px] w-[280px] lg:h-[182px] h-[180px] pt-[30px] pl-[35px] pr-[25px] rounded-3xl ${index > 1 && 'hidden lg:block '} `} key={item.title} >
+                        {/* <div className="bg-[#F4FAFF] w-[240px] h-[182px] pt-[30px] pl-[35px] pr-[25px] rounded-3xl mt-5 hover:-translate-y-5 transition-all duration-300 " key={item.title} > */}
+                        <div className="bg-darkBlue text-white inline-block lg:p-2 p-[15px] rounded-full ">
                             {item.icon}
                         </div>
-                        <Typography className='text-primary font-semibold text-xs ss:text-base whitespace-pre-line '>{item.title}</Typography>
+                        <Typography className='text-primary font-semibold font-raleway text-base whitespace-pre-line '>{item.title}</Typography>
 
                     </div>
 
                 ))}
             </div>
+
+            <ShipIcon className='absolute -left-[10000000px] ' />
+
+            <div className=" w-full mt-5 flex lg:hidden justify-between items-center relative ">
+                <div className="border-t-[6px] lg:h-2 h-[6px] lg:w-full w-[90%] absolute right-0  border-darkBlue bordwe border-dashed translate-y-[11px] ">
+                </div>
+                <div className='z-10  ' >
+                    <svg className='w-12 h-12  ' viewBox="0 0 82 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+                        <rect x="0.75" width="80.7359" height="80" fill="url(#pattern0_2070_64)" />
+                        <defs>
+                            <pattern id="pattern0_2070_64" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlinkHref="#image0_2070_64" transform="matrix(0.00195312 0 0 0.00197109 0 -0.00459919)" />
+                            </pattern>
+                            <image id="image0_2070_64" width="512" height="512" xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFHGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIzLTAyLTI3VDIyOjMwOjMyKzA0OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMy0wMi0yN1QyMjozMTowMSswNDowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMy0wMi0yN1QyMjozMTowMSswNDowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDplYTdmNzVhMC0zNGJl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" />
+                        </defs>
+                    </svg>
+                </div>
+                <div className='lg:w-[21.02px] lg:h-[20.62px] w-4 h-4 rounded-full bg-darkBlue translate-y-[11px] ' ></div>
+                <div className='lg:w-[21.02px] lg:h-[20.62px] w-4 h-4 rounded-full bg-darkBlue translate-y-[11px] ' ></div>
+                <div className='lg:w-[21.02px] lg:h-[20.62px] w-4 h-4 rounded-full bg-darkBlue translate-y-[11px] ' ></div>
+                <div className='lg:w-[21.02px] lg:h-[20.62px] w-4 h-4 rounded-full bg-darkBlue translate-y-[11px] ' ></div>
+            </div>
+
+
 
         </div>
     )

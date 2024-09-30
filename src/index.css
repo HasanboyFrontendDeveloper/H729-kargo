@@ -7,3 +7,19 @@
 * {
   font-family: "Raleway", sans-serif;
 }
+
+.acardionBg {
+  background: radial-gradient(
+    39.29% 9701.17% at 50% 50%,
+    rgba(235, 240, 244, 0.5) 0%,
+    rgba(217, 217, 217, 0) 100%
+  );
+}
+
+.acardionHover:hover {
+  background: radial-gradient(
+    39.29% 9701.17% at 50% 50%,
+    rgba(235, 240, 244, 0.5) 0%,
+    rgba(217, 217, 217, 0) 100%
+  );
+}

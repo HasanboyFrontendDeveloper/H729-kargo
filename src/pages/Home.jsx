@@ -8,6 +8,7 @@ const Home = () => {
 
   const handleOpen = () => setOpen(!open);
 
+
   return (
     <div className=''>
       <Header />

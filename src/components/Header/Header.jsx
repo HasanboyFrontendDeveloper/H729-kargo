@@ -4,19 +4,19 @@ import { Phone } from 'lucide-react'
 
 const Header = () => {
     return (
-        <div className='bg-secondary flex flex-col md:flex-row justify-between lg:max-w-[1276px] max-w-[90%] md:max-w-[80%] mx-auto rounded-3xl mb-5 mt-2 ss:px-10 pl-5 pr-[26px] ' >
-            <div className="ml-8 max-w-[468px] max-h-[424px] pt-[53px]  ">
-                <Typography variant='h1' className='font-raleway text-primary font-bold max-w-[466px] lg:text-[51px] leading-[59.87px] md:text-[35px] sm:text-[30px] text-[25px] '  >
+        <div className='bg-secondary flex gap-[19px] lg:gap-0 flex-col md:flex-row justify-between lg:max-w-[1276px] max-w-[280px] md:max-w-[80%] mx-auto rounded-3xl mt-[10px] lg:mt-[32px] lg:pl-10 lg:pr-[26px] ' >
+            <div className="lg:ml-8 lg:mb-[69px] lg:mt-[53px]  lg:max-w-[468px] max-w-[240px] lg:max-h-[424px]  m-5 mb-0   ">
+                <Typography variant='h1' className='font-raleway text-primary font-bold max-w-[466px] lg:text-[51px] lg:!leading-[59.87px] !leading-[30.52px] md:text-[35px] sm:text-[30px] text-[26px] '  >
                     Доставка грузов из Китая в Россию
                 </Typography>
 
-                <Typography className='text-textPrimary font-raleway mt-[15px] mb-[10px] font-normal leading-[122.4px] ss:text-base text-sm ' >
+                <Typography className='text-textPrimary font-raleway lg:mt-[15px] lg:mb-[10px] my-[10px] font-normal lg:!leading-[22.4px] !leading-[19.6px] ss:text-base text-sm ' >
                     Мы предоставляем бесплатно:
                 </Typography>
-                <ul className='flex gap-x-10 ' >
+                <ul className='flex lg:flex-row flex-col lg:gap-x-10 gap-y-[10px] ' >
                     <div className="">
-                        <li className='flex gap-2 items-center '>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li className='flex gap-2 items-center mb-[10px] '>
+                            <svg width="20" height="20" className='lg:w-5 lg:h-5 w-4 h-4  ' viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.77085 11.8958L6.72919 9.85413C6.60419 9.72913 6.45141 9.66663 6.27085 9.66663C6.0903 
                                 9.66663 5.93752 9.72913 5.81252 9.85413C5.67363 9.99301 5.60419 10.1562 5.60419 10.3437C5.60419 
                                 10.5312 5.66669 10.6875 5.79169 10.8125L8.33335 13.3541C8.44446 13.4652 8.5903 13.5208 8.77085 
@@ -36,13 +36,13 @@ const Header = () => {
                             </svg>
 
 
-                            <Typography className='text-textPrimary font-raleway font-medium ss:text-base text-sm ' >
+                            <Typography className='text-textPrimary font-raleway font-normal lg:!leading-[18.78px] !leading-[16.44px] ss:text-base text-sm ' >
                                 Переводчик
                             </Typography>
                         </li>
 
                         <li className='flex gap-2 items-center '>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg className='lg:w-5 lg:h-5 w-4 h-4  ' viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.77085 11.8958L6.72919 9.85413C6.60419 9.72913 6.45141 9.66663 6.27085 9.66663C6.0903 
                                 9.66663 5.93752 9.72913 5.81252 9.85413C5.67363 9.99301 5.60419 10.1562 5.60419 10.3437C5.60419 
                                 10.5312 5.66669 10.6875 5.79169 10.8125L8.33335 13.3541C8.44446 13.4652 8.5903 13.5208 8.77085 
@@ -62,7 +62,7 @@ const Header = () => {
                             </svg>
 
 
-                            <Typography className='text-textPrimary font-raleway font-medium ss:text-base text-sm ' >
+                            <Typography className='text-textPrimary font-raleway font-normal lg:!leading-[18.78px] !leading-[16.44px] ss:text-base text-sm ' >
                                 Поиск товара
                             </Typography>
                         </li>
@@ -71,8 +71,8 @@ const Header = () => {
 
                     <div className="">
 
-                        <li className='flex gap-2 items-center '>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li className='flex gap-2 items-center mb-[10px] '>
+                            <svg className='lg:w-5 lg:h-5 w-4 h-4  ' viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.77085 11.8958L6.72919 9.85413C6.60419 9.72913 6.45141 9.66663 6.27085 9.66663C6.0903 
                                 9.66663 5.93752 9.72913 5.81252 9.85413C5.67363 9.99301 5.60419 10.1562 5.60419 10.3437C5.60419 
                                 10.5312 5.66669 10.6875 5.79169 10.8125L8.33335 13.3541C8.44446 13.4652 8.5903 13.5208 8.77085 
@@ -92,12 +92,12 @@ const Header = () => {
                             </svg>
 
 
-                            <Typography className='text-textPrimary font-raleway font-medium ss:text-base text-sm ' >
+                            <Typography className='text-textPrimary font-raleway font-normal lg:!leading-[18.78px] !leading-[16.44px] ss:text-base text-sm ' >
                                 Хранение грузов
                             </Typography>
                         </li>
                         <li className='flex gap-2 items-center '>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg className='lg:w-5 lg:h-5 w-4 h-4  ' viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.77085 11.8958L6.72919 9.85413C6.60419 9.72913 6.45141 9.66663 6.27085 9.66663C6.0903 
                                 9.66663 5.93752 9.72913 5.81252 9.85413C5.67363 9.99301 5.60419 10.1562 5.60419 10.3437C5.60419 
                                 10.5312 5.66669 10.6875 5.79169 10.8125L8.33335 13.3541C8.44446 13.4652 8.5903 13.5208 8.77085 
@@ -117,40 +117,51 @@ const Header = () => {
                             </svg>
 
 
-                            <Typography className='text-textPrimary font-raleway font-medium ss:text-base text-sm ' >
+                            <Typography className='text-textPrimary font-raleway font-normal lg:!leading-[18.78px] !leading-[16.44px] ss:text-base text-sm ' >
                                 Досмотр грузов
                             </Typography>
                         </li>
                     </div>
                 </ul>
 
-                <form className='flex flex-col gap-5 my-5 '>
-                    <Input
-                        className='placeholder:text-[#929DAF] h-[50px] p-0 placeholder:opacity-100 focus:text-primary active:text-primary border-2 active:border-transparent focus:border-transparent bg-white rounded-2xl '
-                        placeholder='Введите ваш номер телефона'
-                        containerProps={{ outline: 'none' }}
-                        icon={<Phone />}
-                        labelProps={{
-                            className: "hidden",
-                        }}
-                        
-                    />
+                <form className='flex flex-col gap-[10px] lg:mt-[33px] mt-5 '>
 
-                    <Input
-                        className='placeholder:text-[#929DAF] h-[50px] px-[19px] placeholder:opacity-100  focus:text-primary active:text-primary border-2 active:border-transparent focus:border-transparent border-transparent bg-white rounded-2xl '
-                        placeholder='Какой товар вы ищите или хотите доставить в Россию?'
-                        containerProps={{ outline: 'none' }}
-                        labelProps={{
-                            className: "hidden",
-                        }}
-                    />
+                    <div className="relative">
 
-                    <Button style={{lineHeight: '18.78px'}} className='bg-primary font-semibold font-raleway px-0 normal-case hover:bg-darkBlue duration-300 text-base py-[17.5px] ' >Получить 100$ скидку на доставку</Button>
+                        <input
+                            type="tel"
+                            className='
+                             bg-[#E6F1FA] rounded-2xl py-[13px] px-5 w-full outline-darkBlue
+                                lg:placeholder:!leading-[18.78px] placeholder:!leading-[16.44px] placeholder:font-raleway placeholder:text-[#929DAF] placeholder:text-base placeholder:font-medium active:placeholder:text-darkBlue focus:placeholder:text-darkBlue 
+                     '
+                            placeholder={`${window.innerWidth <= 960 ? 'Номер телефона' : 'Введите ваш номер телефона'}`}
+                        />
+
+                        <svg width="18" height="18" className='absolute right-[23px] top-[16px] ' viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.875 18C14.8417 18 12.8208 17.5 10.8125 16.5C8.80417 15.5 7 14.2 5.4 12.6C3.8 11 2.5 9.19583 1.5 7.1875C0.5 5.17917 0 3.15833 0 1.125C0 0.808333 0.108333 0.541667 0.325 0.325C0.541667 0.108333 0.808333 0 1.125 0H4.625C4.85833 0 5.0625 0.0791667 5.2375 0.2375C5.4125 0.395833 5.525 0.608333 5.575 0.875L6.25 4.025C6.28333 4.25833 6.27917 4.47083 6.2375 4.6625C6.19583 4.85417 6.10833 5.01667 5.975 5.15L3.475 7.675C4.40833 9.225 5.45417 10.575 6.6125 11.725C7.77083 12.875 9.08333 13.85 10.55 14.65L12.925 12.2C13.0917 12.0167 13.2833 11.8875 13.5 11.8125C13.7167 11.7375 13.9333 11.725 14.15 11.775L17.125 12.425C17.375 12.475 17.5833 12.6 17.75 12.8C17.9167 13 18 13.2333 18 13.5V16.875C18 17.1917 17.8917 17.4583 17.675 17.675C17.4583 17.8917 17.1917 18 16.875 18Z" fill="#929DAF" />
+                        </svg>
+
+                    </div>
+
+                    <div className="relative">
+
+                        <input
+                            type="text"
+                            className='
+                            bg-[#E6F1FA] rounded-2xl pt-[13.5px] pb-[12.5px] px-[19px] lg:h-auto h-[76px] w-full outline-darkBlue
+                                lg:placeholder:!leading-[18.78px] placeholder:!leading-[16.44px] placeholder:-translate-y-4 lg:placeholder:-translate-y-0 placeholder:w-[158px] lg:placeholder:w-auto placeholder:font-raleway placeholder:text-[#929DAF] lg:placeholder:text-base placeholder:text-sm placeholder:font-medium placeholder:whitespace-pre-line lg:placeholder:whitespace-pre active:placeholder:text-darkBlue focus:placeholder:text-darkBlue
+                            '
+                            placeholder='Какой товар вы ищите или хотите доставить в Россию?'
+                        />
+
+                    </div>
+
+                    <Button className='bg-primary font-semibold font-raleway lg:px-0 normal-case hover:bg-darkBlue duration-300 lg:text-base text-sm lg:!leading-[18.78px] !leading-[16.44px] lg:py-[17.5px] py-3 px-[43px] ' >Получить 100$ скидку на доставку</Button>
                 </form>
 
             </div>
             <div className="">
-                <img src={person} alt="Header Image" className='sm:max-w-[350px] lg:max-w-[560px] md:max-w-[450px] max-w-[250px] ' />
+                <img src={person} alt="Header Image" className='lg:max-w-[560px] md:max-w-[450px] max-w-[280px]  ' />
             </div>
         </div>
     )
